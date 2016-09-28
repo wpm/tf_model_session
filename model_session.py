@@ -58,7 +58,7 @@ class ModelSession(object):
     @classmethod
     def restore(cls, checkpoint_directory):
         """
-        Restore an existing model session.
+        Restore a serialized model session.
 
         :param checkpoint_directory:  directory containing checkpoint files
         :type checkpoint_directory: str

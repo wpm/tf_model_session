@@ -41,14 +41,14 @@ transparently during deserialization.
 The model session pattern allows each to be specified at the point
 in the model's lifecycle when it is required.
 
-The sizes are the two convolutional layers are passed to the `create` method
-inherited from `ModelSession` that is used to create a new model.
-These become part of the structure of the model and do not need to be
-specified again when a model is deserialized.
-The learning rate, on the other hand, only need to be specified during
-training.
+The sizes of the two convolutional layers are passed to the `ModelSession.create` 
+method that is used to create a new model.
+These become part of the the model's structure and do not need to be
+specified again when the model is deserialized.
+The learning rate, on the other hand, only needs to be specified at
+training time.
 Furthermore, we would like to be able to change its value during training,
-so it is a parameter of the `train` method of `MNISTModelSession` and passed
+so it is a parameter of the `MNISTModelSession.train` method and passed
 into the model via a feed dictionary.
 Similarly, the keep probability takes on a user-specified value during training
 and the value 1 during testing, so it too is a parameter of the `train`
