@@ -1,7 +1,7 @@
 # Model Session: an Object Pattern for TensorFlow
 
 Model session is an object-oriented pattern that makes it easier to run
-and serialize TensorFlow models.
+and serialize [TensorFlow](https://www.tensorflow.org) models.
 It streamlines graph and session management and serialization and
 deserialization, allowing you to focus on the details of your model.
 
