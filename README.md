@@ -43,10 +43,9 @@ in the model's lifecycle when it is required.
 
 The sizes of the two convolutional layers are passed to the `ModelSession.create` 
 method that is used to create a new model.
-These become part of the the model's structure and do not need to be
+These become part of the model's structure and do not need to be
 specified again when the model is deserialized.
-The learning rate, on the other hand, only needs to be specified at
-training time.
+The learning rate, on the other hand, can be specified at training time.
 Furthermore, we would like to be able to change its value during training,
 so it is a parameter of the `MNISTModelSession.train` method and passed
 into the model via a feed dictionary.
